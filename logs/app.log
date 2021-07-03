@@ -102,3 +102,48 @@
 2021-07-03 23:30:53,997 INFO com.github.briares.priceApi.controller.PriceRestController [Test worker] request for product price ended with result ProductPriceDto(productId=35455, brandId=1, priceList=4, startDate=2020-06-15T16:00, endDate=2020-12-31T23:59:59, price=38.95)
 2021-07-03 23:30:54,033 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] priceReporting - Shutdown initiated...
 2021-07-03 23:30:54,035 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] priceReporting - Shutdown completed.
+2021-07-03 23:36:36,791 INFO com.github.briares.priceApi.PriceToolApplication [restartedMain] Starting PriceToolApplication using Java 16 on salamander with PID 3627708 (/media/britoss/work/dev/program/spring/priceTool/build/classes/java/main started by britoss in /media/britoss/work/dev/program/spring/priceTool)
+2021-07-03 23:36:36,794 DEBUG com.github.briares.priceApi.PriceToolApplication [restartedMain] Running with Spring Boot v2.6.0-SNAPSHOT, Spring v5.3.8
+2021-07-03 23:36:36,794 INFO com.github.briares.priceApi.PriceToolApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-07-03 23:36:37,914 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-07-03 23:36:37,915 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-03 23:36:37,973 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/priceApi] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-07-03 23:36:38,020 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] priceReporting - Starting...
+2021-07-03 23:36:38,168 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] priceReporting - Start completed.
+2021-07-03 23:36:38,307 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-03 23:36:38,341 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-03 23:36:38,430 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-03 23:36:38,500 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-07-03 23:36:38,892 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-03 23:36:40,122 INFO com.github.briares.priceApi.PriceToolApplication [restartedMain] Started PriceToolApplication in 3.8 seconds (JVM running for 4.162)
+2021-07-03 23:36:48,709 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] priceReporting - Shutdown initiated...
+2021-07-03 23:36:48,713 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] priceReporting - Shutdown completed.
+2021-07-03 23:36:53,772 INFO com.github.briares.priceApi.controller.PriceRestControllerTest [Test worker] Starting PriceRestControllerTest using Java 16 on salamander with PID 3628767 (started by britoss in /media/britoss/work/dev/program/spring/priceTool)
+2021-07-03 23:36:53,775 DEBUG com.github.briares.priceApi.controller.PriceRestControllerTest [Test worker] Running with Spring Boot v2.6.0-SNAPSHOT, Spring v5.3.8
+2021-07-03 23:36:53,777 INFO com.github.briares.priceApi.controller.PriceRestControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2021-07-03 23:36:55,163 INFO org.apache.catalina.core.StandardService [Test worker] Starting service [Tomcat]
+2021-07-03 23:36:55,167 INFO org.apache.catalina.core.StandardEngine [Test worker] Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-03 23:36:55,293 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/priceApi] [Test worker] Initializing Spring embedded WebApplicationContext
+2021-07-03 23:36:55,355 INFO com.zaxxer.hikari.HikariDataSource [Test worker] priceReporting - Starting...
+2021-07-03 23:36:55,509 INFO com.zaxxer.hikari.HikariDataSource [Test worker] priceReporting - Start completed.
+2021-07-03 23:36:55,726 INFO org.hibernate.jpa.internal.util.LogHelper [Test worker] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-03 23:36:55,776 INFO org.hibernate.Version [Test worker] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-03 23:36:55,891 INFO org.hibernate.annotations.common.Version [Test worker] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-03 23:36:55,969 INFO org.hibernate.dialect.Dialect [Test worker] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-07-03 23:36:56,356 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [Test worker] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-03 23:36:58,075 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/priceApi] [Test worker] Initializing Spring TestDispatcherServlet ''
+2021-07-03 23:36:58,232 INFO com.github.briares.priceApi.controller.PriceRestControllerTest [Test worker] Started PriceRestControllerTest in 4.751 seconds (JVM running for 6.082)
+2021-07-03 23:36:58,532 INFO com.github.briares.priceApi.controller.PriceRestController [Test worker] price request for product ProductPriceRequestDto(brandId=1, productId=35455, dateOfApplication=2019-06-16T21:00)
+2021-07-03 23:36:58,582 INFO com.github.briares.priceApi.controller.PriceRestController [Test worker] request for product price ended with result null
+2021-07-03 23:36:58,630 INFO com.github.briares.priceApi.controller.PriceRestController [Test worker] price request for product ProductPriceRequestDto(brandId=1, productId=35455, dateOfApplication=2020-06-14T10:00)
+2021-07-03 23:36:58,640 INFO com.github.briares.priceApi.controller.PriceRestController [Test worker] request for product price ended with result ProductPriceDto(productId=35455, brandId=1, priceList=1, startDate=2020-06-14T00:00, endDate=2020-12-31T23:59:59, price=35.50)
+2021-07-03 23:36:58,672 INFO com.github.briares.priceApi.controller.PriceRestController [Test worker] price request for product ProductPriceRequestDto(brandId=1, productId=35455, dateOfApplication=2020-06-14T16:00)
+2021-07-03 23:36:58,675 INFO com.github.briares.priceApi.controller.PriceRestController [Test worker] request for product price ended with result ProductPriceDto(productId=35455, brandId=1, priceList=2, startDate=2020-06-14T15:00, endDate=2020-06-14T18:30, price=25.45)
+2021-07-03 23:36:58,689 INFO com.github.briares.priceApi.controller.PriceRestController [Test worker] price request for product ProductPriceRequestDto(brandId=1, productId=35455, dateOfApplication=2020-06-14T21:00)
+2021-07-03 23:36:58,691 INFO com.github.briares.priceApi.controller.PriceRestController [Test worker] request for product price ended with result ProductPriceDto(productId=35455, brandId=1, priceList=1, startDate=2020-06-14T00:00, endDate=2020-12-31T23:59:59, price=35.50)
+2021-07-03 23:36:58,704 INFO com.github.briares.priceApi.controller.PriceRestController [Test worker] price request for product ProductPriceRequestDto(brandId=1, productId=35455, dateOfApplication=2020-06-15T10:00)
+2021-07-03 23:36:58,706 INFO com.github.briares.priceApi.controller.PriceRestController [Test worker] request for product price ended with result ProductPriceDto(productId=35455, brandId=1, priceList=3, startDate=2020-06-15T00:00, endDate=2020-06-15T11:00, price=30.50)
+2021-07-03 23:36:58,717 INFO com.github.briares.priceApi.controller.PriceRestController [Test worker] price request for product ProductPriceRequestDto(brandId=1, productId=35455, dateOfApplication=2020-06-16T21:00)
+2021-07-03 23:36:58,720 INFO com.github.briares.priceApi.controller.PriceRestController [Test worker] request for product price ended with result ProductPriceDto(productId=35455, brandId=1, priceList=4, startDate=2020-06-15T16:00, endDate=2020-12-31T23:59:59, price=38.95)
+2021-07-03 23:36:58,762 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] priceReporting - Shutdown initiated...
+2021-07-03 23:36:58,764 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] priceReporting - Shutdown completed.
