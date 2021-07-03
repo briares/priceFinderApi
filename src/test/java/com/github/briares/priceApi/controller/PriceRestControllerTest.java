@@ -137,7 +137,7 @@ public class PriceRestControllerTest {
         .queryParams(getQueryParams (applicationDate, BRAND_ID_1, PRODUCT_ID_35455))
         .contentType("application/json"))
         .andDo(print())
-        .andExpect(status().isBadRequest());
+        .andExpect(status().isOk());
   }
 
   private MultiValueMap<String, String> getQueryParams(final String dateTimeOfApplication,

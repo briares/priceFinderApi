@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class ProductPriceFinderImpl implements ProductPriceFinderService {
+public class ProductPriceFinderServiceImpl implements ProductPriceFinderService {
   // lombok magic autowiring
   private final ProductPriceRepository productPriceRepository;
   private final ProductPriceMapper productPriceMapper;

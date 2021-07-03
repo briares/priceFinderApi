@@ -2,7 +2,7 @@ package com.github.briares.priceApi.controller;
 
 import com.github.briares.priceApi.dto.ProductPriceDto;
 import com.github.briares.priceApi.dto.ProductPriceRequestDto;
-import com.github.briares.priceApi.service.impl.ProductPriceFinderImpl;
+import com.github.briares.priceApi.service.ProductPriceFinderService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class PriceRestController {
   public static final String PRICE_ENDPOINT = "/prices";
 
-  private final ProductPriceFinderImpl productPriceFinder;
+  private final ProductPriceFinderService productPriceFinder;
 
   @Operation(summary = "Get a product price by application date")
   @ApiResponses(value = {
