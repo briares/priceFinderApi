@@ -23,12 +23,7 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
-  report:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: dorny/test-reporter@v1
+    - name: Publish Test Report
+      uses: mikepenz/action-junit-report@v2
       with:
-        artifact: test-results            # artifact name
-        name: JUnit Tests                  # Name of the check run which will be created
-        path: '*.xml'                     # Path to test results (inside artifact .zip)
-        reporter: java-junit              # Format of test results      
+        report_paths: '**/build/test-results/test/TEST-*.xml'
