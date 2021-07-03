@@ -36,4 +36,4 @@ logging:
     console: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
     file: "%d %p %c{1.} [%t] %m%n"
   file:
-    name: app.log
+    name: logs/app.log
