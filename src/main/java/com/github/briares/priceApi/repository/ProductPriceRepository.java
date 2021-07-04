@@ -11,7 +11,7 @@ public interface ProductPriceRepository extends JpaRepository<ProductPrice, Inte
   @Query("select t from #{#entityName} t where brandId=:brandId and productId=:productId " +
          "and :dateOfApplication BETWEEN startDate AND endDate order by priority desc")
   List<ProductPrice> findAllProductPricesByDate(
-      @Param("brandId") int brandId,
-      @Param("productId") int productId,
+      @Param("brandId") String brandId,
+      @Param("productId") String productId,
       @Param("dateOfApplication") LocalDateTime dateOfApplication);
 }

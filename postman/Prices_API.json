@@ -1,0 +1,234 @@
+{
+	"id": "8ba83e14-096c-cfc3-1aff-f22a26a6fed5",
+	"name": "Prices API collection",
+	"description": "",
+	"order": [
+		"0a0e05c5-1ca3-0666-4fcd-556847797625",
+		"094fa935-972b-e6a2-141f-7302b24465bc",
+		"b8748287-7e69-6f59-2624-66d081f37fe4",
+		"9dc3d36a-8699-a423-4c5b-ff885e06dc9f",
+		"fc60c51a-8f53-bfde-975e-b18f8026a0cb"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1625382935672,
+	"owner": "16504867",
+	"public": false,
+	"requests": [
+		{
+			"id": "094fa935-972b-e6a2-141f-7302b24465bc",
+			"headers": "",
+			"headerData": [],
+			"url": "{{HOST}}/{{PRICE_API_PATH}}?{{REQUEST_PARAM_BRAND_ID}}=1&{{REQUEST_PARAM_PRODUCT_ID}}=35455&{{REQUEST_PARAM_DATE_OF_APPLICATION}}=2020-06-14T16:00:00Z",
+			"queryParams": [
+				{
+					"key": "{{REQUEST_PARAM_BRAND_ID}}",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "{{REQUEST_PARAM_PRODUCT_ID}}",
+					"value": "35455",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "{{REQUEST_PARAM_DATE_OF_APPLICATION}}",
+					"value": "2020-06-14T16:00:00Z",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625384247453,
+			"name": "TEST_2",
+			"description": "",
+			"collectionId": "8ba83e14-096c-cfc3-1aff-f22a26a6fed5",
+			"responses": []
+		},
+		{
+			"id": "0a0e05c5-1ca3-0666-4fcd-556847797625",
+			"headers": "",
+			"headerData": [],
+			"url": "{{HOST}}/{{PRICE_API_PATH}}?{{REQUEST_PARAM_BRAND_ID}}=1&{{REQUEST_PARAM_PRODUCT_ID}}=35455&{{REQUEST_PARAM_DATE_OF_APPLICATION}}=2020-06-14T10:00:00Z",
+			"queryParams": [
+				{
+					"key": "{{REQUEST_PARAM_BRAND_ID}}",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "{{REQUEST_PARAM_PRODUCT_ID}}",
+					"value": "35455",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "{{REQUEST_PARAM_DATE_OF_APPLICATION}}",
+					"value": "2020-06-14T10:00:00Z",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625384199018,
+			"name": "TEST_1",
+			"description": "",
+			"collectionId": "8ba83e14-096c-cfc3-1aff-f22a26a6fed5",
+			"responses": []
+		},
+		{
+			"id": "9dc3d36a-8699-a423-4c5b-ff885e06dc9f",
+			"headers": "",
+			"headerData": [],
+			"url": "{{HOST}}/{{PRICE_API_PATH}}?{{REQUEST_PARAM_BRAND_ID}}=1&{{REQUEST_PARAM_PRODUCT_ID}}=35455&{{REQUEST_PARAM_DATE_OF_APPLICATION}}=2020-06-15T10:00:00Z",
+			"queryParams": [
+				{
+					"key": "{{REQUEST_PARAM_BRAND_ID}}",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "{{REQUEST_PARAM_PRODUCT_ID}}",
+					"value": "35455",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "{{REQUEST_PARAM_DATE_OF_APPLICATION}}",
+					"value": "2020-06-15T10:00:00Z",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625384354169,
+			"name": "TEST_4",
+			"description": "",
+			"collectionId": "8ba83e14-096c-cfc3-1aff-f22a26a6fed5",
+			"responses": []
+		},
+		{
+			"id": "b8748287-7e69-6f59-2624-66d081f37fe4",
+			"headers": "",
+			"headerData": [],
+			"url": "{{HOST}}/{{PRICE_API_PATH}}?{{REQUEST_PARAM_BRAND_ID}}=1&{{REQUEST_PARAM_PRODUCT_ID}}=35455&{{REQUEST_PARAM_DATE_OF_APPLICATION}}=2020-06-14T21:00:00Z",
+			"queryParams": [
+				{
+					"key": "{{REQUEST_PARAM_BRAND_ID}}",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "{{REQUEST_PARAM_PRODUCT_ID}}",
+					"value": "35455",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "{{REQUEST_PARAM_DATE_OF_APPLICATION}}",
+					"value": "2020-06-14T21:00:00Z",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625384356333,
+			"name": "TEST_3",
+			"description": "",
+			"collectionId": "8ba83e14-096c-cfc3-1aff-f22a26a6fed5",
+			"responses": []
+		},
+		{
+			"id": "fc60c51a-8f53-bfde-975e-b18f8026a0cb",
+			"headers": "",
+			"headerData": [],
+			"url": "{{HOST}}/{{PRICE_API_PATH}}?{{REQUEST_PARAM_BRAND_ID}}=1&{{REQUEST_PARAM_PRODUCT_ID}}=35455&{{REQUEST_PARAM_DATE_OF_APPLICATION}}=2020-06-16T21:00:00Z",
+			"queryParams": [
+				{
+					"key": "{{REQUEST_PARAM_BRAND_ID}}",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "{{REQUEST_PARAM_PRODUCT_ID}}",
+					"value": "35455",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "{{REQUEST_PARAM_DATE_OF_APPLICATION}}",
+					"value": "2020-06-16T21:00:00Z",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625384351638,
+			"name": "TEST_5",
+			"description": "",
+			"collectionId": "8ba83e14-096c-cfc3-1aff-f22a26a6fed5",
+			"responses": []
+		}
+	]
+}

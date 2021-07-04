@@ -41,6 +41,12 @@ curl -X 'GET' \
 'http://localhost:8080/priceApi/prices?brandId=1&productId=35455&dateOfApplication=2020-06-14T10%3A37%3A50.483Z' \
 -H 'accept: application/json'
 ```
+
+## Pipeline
+
+There is one github actionconfigured. On every push to the repository, the github action is executed and one will be able 
+to see the build and test results.
+
 ## Database
 
 The app uses an in-memory h2 database. That means that every time the application is restarted, the database is dropped and created once again.
@@ -62,17 +68,28 @@ Password: testdb
 * The application uses mapstruts to map from Dto to Models and viceversa
 * I don't use a logback file, it is configured in application.yml, but for 
   production, should be a best practice to use logback file.
+* There's only one profile present (default profile). In PROD, is a good practice to create
+  several for every stage.
+
+## Application considerations
 * I use dto's to transport data between layers. I know, that are some detractors 
   that tell that is better not to use dto's, but I think that in general is not
-  a bad practice. Another approach could be using hexagonal architectures with ports and
-  adaptaters (that I'm using in some of my current projects), but this is a simple
+  a bad practice. Another approach could be to use hexagonal architectures with ports and
+  adapters (that I'm using in some of my current projects), but this is a simple
   project and I considered that adding this extra layer is over engineering.
-* For the data access layer, I use Spring Data with and a custom jpql query to solve the problem 
-  of search the price of the product.   
+* For the data access layer, I use Spring Data with a custom jpql query to solve the problem 
+  of search the price of the product.
+* Request validations error (for example null values or invalid date) are handle by spring. Result will be
+  standard http 400 error, but without pretty messages. Client will receive the full stack trace of error. 
+  I know that it is a bad practice, event could be a security concern, but implementing a custom error handler
+  is out of the scope for now.
+* I didn't use any extra tables. For example. In a real scenario we would have to use a currency table to store
+  the currency descriptions, store table to save the stores and so on.
+* I've decided to use ISO-8601 for the request parameter for the date. Another option could have been to 
+  use epoch time: https://www.epochconverter.com/
+* Regarding the integration test, I would prefer to test the query in the service and data layer instead
+  of testing the rest controller.  I tend to follow the test pyramid (https://martinfowler.com/articles/practical-test-pyramid.html) 
+  practice because testing the web layer is very slow both for development and execution. In fact, lately I 
+  prefer contract testing.
+  
 
-
-postman collection
-
-
-Questions
-Request param Date or Datetime?

@@ -18,9 +18,9 @@ public class ProductPrice {
   @Column(name = "PRICE_LIST")
   private Integer id;
   @Column(name = "BRAND_ID")
-  private int brandId;
+  private String brandId;
   @Column(name = "PRODUCT_ID")
-  private int productId;
+  private String productId;
   @Column(name = "START_DATE")
   private LocalDateTime startDate;
   @Column(name = "END_DATE")

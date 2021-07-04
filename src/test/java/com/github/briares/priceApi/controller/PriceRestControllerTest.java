@@ -130,6 +130,30 @@ public class PriceRestControllerTest {
   }
 
   @Test
+  public void badRequest_nullBrandIdRequest() throws Exception {
+    final String applicationDate = "2019-06-16T21:00:00Z";
+
+    mockMvc.perform(get(PRICE_API_URL)
+        .queryParams(getQueryParams (applicationDate, null, PRODUCT_ID_35455))
+        .contentType("application/json"))
+        .andDo(print())
+        .andExpect(status().isBadRequest())
+        .andExpect(jsonPath("$").doesNotExist());
+  }
+
+  @Test
+  public void badRequest_nullProductIdRequest() throws Exception {
+    final String applicationDate = "2019-06-16T21:00:00Z";
+
+    mockMvc.perform(get(PRICE_API_URL)
+        .queryParams(getQueryParams (applicationDate, BRAND_ID_1, null))
+        .contentType("application/json"))
+        .andDo(print())
+        .andExpect(status().isBadRequest())
+        .andExpect(jsonPath("$").doesNotExist());
+  }
+
+  @Test
   public void badRequest_InvalidDAteFormat() throws Exception {
     final String applicationDate = "2019-31-01T21:00:00Z";
 
