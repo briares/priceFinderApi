@@ -42,9 +42,17 @@ curl -X 'GET' \
 -H 'accept: application/json'
 ```
 
+## Postman
+
+A postman collection with the 5 test is provided under the postman folder in the repository. To use this collection
+you need to import in postman IDE.
+
+Alternatively you can use this link (if you have a postman account) to import the collection:
+https://www.getpostman.com/collections/3a22c95f48d09fc7ea14
+
 ## Pipeline
 
-There is one github actionconfigured. On every push to the repository, the github action is executed and one will be able 
+There is one github action configured. On every push to the repository, the github action is executed and one will be able 
 to see the build and test results.
 
 ## Database

@@ -933,3 +933,5 @@ javax.validation.UnexpectedTypeException: HV000030: No validator could be found 
 2021-07-04 09:44:19,032 INFO com.github.briares.priceApi.controller.PriceRestController [http-nio-8080-exec-7] request for product price ended with result ProductPriceDto(productId=35455, brandId=1, priceList=3, startDate=2020-06-15T00:00, endDate=2020-06-15T11:00, price=30.50)
 2021-07-04 09:44:19,069 INFO com.github.briares.priceApi.controller.PriceRestController [http-nio-8080-exec-8] price request for product ProductPriceRequestDto(brandId=1, productId=35455, dateOfApplication=2020-06-16T21:00)
 2021-07-04 09:44:19,086 INFO com.github.briares.priceApi.controller.PriceRestController [http-nio-8080-exec-8] request for product price ended with result ProductPriceDto(productId=35455, brandId=1, priceList=4, startDate=2020-06-15T16:00, endDate=2020-12-31T23:59:59, price=38.95)
+2021-07-04 09:50:22,966 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] priceReporting - Shutdown initiated...
+2021-07-04 09:50:23,016 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] priceReporting - Shutdown completed.
