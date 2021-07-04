@@ -53,7 +53,9 @@ https://www.getpostman.com/collections/3a22c95f48d09fc7ea14
 ## Pipeline
 
 There is one github action configured. On every push to the repository, the github action is executed and one will be able 
-to see the build and test results.
+to see the build and test results. All you need to do is to click Actions button in Github and the job:
+
+![img.png](img.png)
 
 ## Database
 
