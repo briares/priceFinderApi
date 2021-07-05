@@ -37,7 +37,7 @@ public class PriceRestController {
       @ApiResponse(responseCode = "404", description = "Product price not found",
           content = @Content) })
   @GetMapping
-  public ResponseEntity<ProductPriceDto> getAllPricesByDate(@Valid ProductPriceRequestDto priceRequest) {
+  public ResponseEntity<ProductPriceDto> getProductPrice(@Valid ProductPriceRequestDto priceRequest) {
     log.info("price request for product {}", priceRequest);
     ProductPriceDto productPriceDto = productPriceFinder.getPriceForProduct(priceRequest);
     log.info("request for product price ended with result {}", productPriceDto);
@@ -45,7 +45,7 @@ public class PriceRestController {
       return new ResponseEntity<ProductPriceDto>(productPriceDto, HttpStatus.OK);
     }
     else {
-      return new ResponseEntity<>( HttpStatus.NOT_FOUND);
+      return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
   }
 }
