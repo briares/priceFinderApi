@@ -34,7 +34,6 @@ dependencies {
     implementation 'org.mapstruct:mapstruct:1.4.2.Final'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
 
-    //implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '3.0.0'
     implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.5.9'
     implementation group: 'io.swagger.core.v3', name: 'swagger-models', version: '2.1.10'
 
