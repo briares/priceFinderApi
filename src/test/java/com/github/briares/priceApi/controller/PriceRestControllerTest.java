@@ -25,7 +25,7 @@ public class PriceRestControllerTest {
   @Autowired
   private MockMvc mockMvc;
 
-  // Test 1: petición a las 10:00 del día 14 del producto 35455 para la brand 1 (ZARA)
+  // Test 1: petición a las 10:00 del día 14 del producto 35455 para la brand 1
   @Test
   public void requestOK_test1() throws Exception {
     final String applicationDate = "2020-06-14T10:00:00Z";
@@ -43,7 +43,7 @@ public class PriceRestControllerTest {
         .andExpect(jsonPath("$.price", is(35.50)));
   }
 
-  // Test 2: petición a las 16:00 del día 14 del producto 35455 para la brand 1 (ZARA)
+  // Test 2: petición a las 16:00 del día 14 del producto 35455 para la brand 1
   @Test
   public void requestOK_test2() throws Exception {
     final String applicationDate = "2020-06-14T16:00:00Z";
@@ -61,7 +61,7 @@ public class PriceRestControllerTest {
         .andExpect(jsonPath("$.price", is(25.45)));
   }
 
-  // Test 3: petición a las 21:00 del día 14 del producto 35455 para la brand 1 (ZARA)
+  // Test 3: petición a las 21:00 del día 14 del producto 35455 para la brand 1
   @Test
   public void requestOK_test3() throws Exception {
     final String applicationDate = "2020-06-14T21:00:00Z";
@@ -79,7 +79,7 @@ public class PriceRestControllerTest {
         .andExpect(jsonPath("$.price", is(35.50)));
   }
 
-  // Test 4: petición a las 10:00 del día 15 del producto 35455 para la brand 1 (ZARA)
+  // Test 4: petición a las 10:00 del día 15 del producto 35455 para la brand 1
   @Test
   public void requestOK_test4() throws Exception {
     final String applicationDate = "2020-06-15T10:00:00Z";
@@ -97,7 +97,7 @@ public class PriceRestControllerTest {
         .andExpect(jsonPath("$.price", is(30.50)));
   }
 
-  // Test 5: petición a las 21:00 del día 16 del producto 35455 para la brand 1 (ZARA)
+  // Test 5: petición a las 21:00 del día 16 del producto 35455 para la brand 1
   @Test
   public void requestOK_test5() throws Exception {
     final String applicationDate = "2020-06-16T21:00:00Z";
